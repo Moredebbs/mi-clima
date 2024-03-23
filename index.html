@@ -4,22 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=h1, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>mi clima</title>
   </head>
   <body>
     <div class="weather-app">
       <header>
-        <input type="search" placeholder="Enter a city.." />
-        <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            class="search-form-input"
+            placeholder="Enter a city.."
+            required
+          />
+
+          <input type="submit" class="search-form-button" value="Search" />
+        </form>
       </header>
       <main>
-        <div>
-          <h1>Paris</h1>
-          <p>
-            Thursday 23:32, moderate rain <br />Humidity: 87%, Wind: 7.2km/h
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Paris</h1>
+            <p class="weather-app-details">
+              Thursday 23:32, moderate rain <br />Humidity:
+              <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤️</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>🌤️ 12°C</div>
       </main>
 
       <footer>
