@@ -71,6 +71,23 @@ main {
   font-size: 28px;
   margin-top: 6px;
 }
+.weather-forecast {
+  margin-top: 30px;
+
+  color: black;
+
+  justify-content: space-around;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
 footer {
   border-top: 1px solid #f9f7fe;
   padding: 30px 0 0 0;
